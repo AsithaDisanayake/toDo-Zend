@@ -38,11 +38,11 @@ class Module implements ConfigProviderInterface
         ];
     }
 
-    public function getControllerConfig(){ 
+    public function getControllerConfig(){
         return [
             'factories'=>[
-                controller\IndexController::class =>function($container){
-                    return new Controller\IndexController($container->get(Model\PostTable::class));
+                Controller\IndexController::class =>function($container){
+                    return new Controller\IndexController($container->get(Model\TaskTable::class));
                 }
             ]
         ];

@@ -1,7 +1,7 @@
 <?php
 namespace Task\Model;
 
-Class Post{
+Class Task{
     protected $id;
     protected $name;
     protected $description;
