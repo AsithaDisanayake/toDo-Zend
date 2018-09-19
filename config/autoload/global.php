@@ -12,5 +12,11 @@
  */
 
 return [
-    // ...
+   'db' => array(
+       'driver' => 'Pdo',
+       'dsn' => 'mysql:dbname-todo',
+       'host' => 'localhost',
+       'username' =>  'root',
+       'password' => ''
+   )
 ];
